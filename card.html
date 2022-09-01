@@ -1,0 +1,2153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+    <script
+      src="https://kit.fontawesome.com/38f0430002.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="card.css" />
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="container">
+        <div class="card__inner">
+          <div class="card__images">
+            <div class="preview">
+              <img class="preview__img" src="img/preview-1.png" alt="preview" />
+              <img class="preview__img" src="img/preview-2.png" alt="preview" />
+              <img class="preview__img" src="img/preview-3.png" alt="preview" />
+              <img class="preview__img" src="img/preview-4.png" alt="preview" />
+            </div>
+            <div class="card__wrapper">
+              <div class="card__slider-wrapper">
+                <div class="card-prev"></div>
+                <div class="swiper mySwiper card-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        class="card__img"
+                        src="img/card-image-1.png"
+                        alt="card-image"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="card__img"
+                        src="img/card-image-1.png"
+                        alt="card-image"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="card__img"
+                        src="img/card-image-1.png"
+                        alt="card-image"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="card__img"
+                        src="img/card-image-1.png"
+                        alt="card-image"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="card-next"></div>
+              </div>
+              <div class="features__list">
+                <div class="features__item">
+                  <img
+                    class="features__item-img"
+                    src="img/features-1.svg"
+                    alt="features"
+                  />
+                  <p class="features__item-text">
+                    Отсутсвие диформации при осадках
+                  </p>
+                </div>
+                <div class="features__item">
+                  <img
+                    class="features__item-img"
+                    src="img/features-1.svg"
+                    alt="features"
+                  />
+                  <p class="features__item-text">
+                    Отсутсвие диформации при осадках
+                  </p>
+                </div>
+                <div class="features__item">
+                  <img
+                    class="features__item-img"
+                    src="img/features-1.svg"
+                    alt="features"
+                  />
+                  <p class="features__item-text">
+                    Отсутсвие диформации при осадках
+                  </p>
+                </div>
+                <div class="features__item">
+                  <img
+                    class="features__item-img"
+                    src="img/features-1.svg"
+                    alt="features"
+                  />
+                  <p class="features__item-text">
+                    Отсутсвие диформации при осадках
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__header">
+              <div class="card__header-stock yes">
+                <img src="img/ready.svg" alt="ready" />
+                <span>В наличии</span>
+              </div>
+              <a class="card__header-link" href="#">
+                <img
+                  class="card__header-icon"
+                  src="img/market.svg"
+                  alt="market"
+                />
+              </a>
+              <a class="card__header-link" href="#">
+                <img class="card__header-icon" src="img/like.svg" alt="like" />
+              </a>
+              <p class="card__header-rating">3.5</p>
+              <a class="card__header-reviews" href="#"> (5 отзывов) </a>
+            </div>
+            <form class="card__form">
+              <div class="card__form-selects">
+                <div class="select-wrapper">
+                  <p class="select-text">Тип профиля: <span>c8</span></p>
+                  <select class="card__form-select">
+                    <option class="card__form-option">C8</option>
+                  </select>
+                </div>
+                <div class="select-wrapper">
+                  <p class="select-text">Покрытие: <span>Agneta</span></p>
+                  <select class="card__form-select">
+                    <option class="card__form-option">C8</option>
+                  </select>
+                </div>
+                <div class="thickness-wrapper">
+                  <p class="select-text">Толщина, мм: <span>0,4</span></p>
+                  <div class="thickness__list">
+                    <div class="thickness__item active">0,4</div>
+                    <div class="thickness__item">0,45</div>
+                    <div class="thickness__item">0,5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="color">
+                <p class="color__text">Цвет: <span>Steell</span></p>
+                <div class="color__list"></div>
+              </div>
+              <div class="calculation">
+                <div class="calculation__price">
+                  <p class="calculation__price calculation__text">Цена за</p>
+                  <div class="calculation__price-info">
+                    <div
+                      class="calculation__price-size calculation__price-block"
+                    >
+                      м<sup>2</sup>
+                    </div>
+                    <div
+                      class="calculation__price-type calculation__price-block"
+                    >
+                      лист
+                    </div>
+                    <p class="calculation__price-value">
+                      56 790 <span>₽./м²</span>
+                    </p>
+                    <p class="calculation__price-value odd">
+                      477 790 <span>₽/м²</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="calculation__count">
+                  <p class="calculation__count-text calculation__text">
+                    Кол-во
+                  </p>
+                  <div class="count-wrapper">
+                    <img
+                      class="calculation__count-btn min"
+                      src="img/min.svg"
+                      alt="svg"
+                    />
+                    <input
+                      class="calculation__count-result"
+                      type="number"
+                      value="2"
+                      placeholder="1"
+                    />
+                    <img
+                      class="calculation__count-btn plus"
+                      src="img/plus.svg"
+                      alt="svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="result">
+                <p class="result__text">Итого: 177 790 <span>₽./м²</span></p>
+                <div class="result__btns">
+                  <button class="result__btn btn_orange">
+                    <img
+                      class="result__btn-img"
+                      src="img/cart.svg"
+                      alt="cart"
+                    />
+                    В корзину
+                  </button>
+                  <button class="result__btn">Купить в 1 клик</button>
+                </div>
+              </div>
+              <p class="warning">
+                <img src="img/warning.svg" alt="warning" />
+                При добавлении товара в корзину, цена будет указываться за м².
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="card calc">
+      <div class="container">
+        <div class="card__inner">
+          <div class="card__images">
+            <div class="preview">
+              <img class="preview__img" src="img/preview-1.png" alt="preview" />
+              <img class="preview__img" src="img/preview-2.png" alt="preview" />
+              <img class="preview__img" src="img/preview-3.png" alt="preview" />
+              <img class="preview__img" src="img/preview-4.png" alt="preview" />
+            </div>
+            <div class="card__wrapper">
+              <div class="card__slider-wrapper">
+                <div class="card-prev"></div>
+                <div class="swiper mySwiper card-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        class="card__img"
+                        src="img/card-image-1.png"
+                        alt="card-image"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="card__img"
+                        src="img/card-image-1.png"
+                        alt="card-image"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="card__img"
+                        src="img/card-image-1.png"
+                        alt="card-image"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="card__img"
+                        src="img/card-image-1.png"
+                        alt="card-image"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="card-next"></div>
+              </div>
+              <div class="features__list">
+                <div class="features__item">
+                  <img
+                    class="features__item-img"
+                    src="img/features-1.svg"
+                    alt="features"
+                  />
+                  <p class="features__item-text">
+                    Отсутсвие диформации при осадках
+                  </p>
+                </div>
+                <div class="features__item">
+                  <img
+                    class="features__item-img"
+                    src="img/features-1.svg"
+                    alt="features"
+                  />
+                  <p class="features__item-text">
+                    Отсутсвие диформации при осадках
+                  </p>
+                </div>
+                <div class="features__item">
+                  <img
+                    class="features__item-img"
+                    src="img/features-1.svg"
+                    alt="features"
+                  />
+                  <p class="features__item-text">
+                    Отсутсвие диформации при осадках
+                  </p>
+                </div>
+                <div class="features__item">
+                  <img
+                    class="features__item-img"
+                    src="img/features-1.svg"
+                    alt="features"
+                  />
+                  <p class="features__item-text">
+                    Отсутсвие диформации при осадках
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__header">
+              <div class="card__header-stock yes">
+                <img src="img/ready.svg" alt="ready" />
+                <span>В наличии</span>
+              </div>
+              <a class="card__header-link" href="#">
+                <img
+                  class="card__header-icon"
+                  src="img/market.svg"
+                  alt="market"
+                />
+              </a>
+              <a class="card__header-link" href="#">
+                <img class="card__header-icon" src="img/like.svg" alt="like" />
+              </a>
+              <p class="card__header-rating">3.5</p>
+              <a class="card__header-reviews" href="#"> (5 отзывов) </a>
+            </div>
+            <form class="card__form">
+              <div class="card__form-selects">
+                <div class="select-wrapper">
+                  <p class="select-text">Тип профиля: <span>c8</span></p>
+                  <select class="card__form-select">
+                    <option class="card__form-option">C8</option>
+                  </select>
+                </div>
+                <div class="select-wrapper">
+                  <p class="select-text">Покрытие: <span>Agneta</span></p>
+                  <select class="card__form-select">
+                    <option class="card__form-option">C8</option>
+                  </select>
+                </div>
+                <div class="thickness-wrapper">
+                  <p class="select-text">Толщина, мм: <span>0,4</span></p>
+                  <div class="thickness__list">
+                    <div class="thickness__item active">0,4</div>
+                    <div class="thickness__item">0,45</div>
+                    <div class="thickness__item">0,5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="color">
+                <p class="color__text">Цвет: <span>Steell</span></p>
+                <div class="color__list"></div>
+              </div>
+              <div class="calculation-size">
+                <div class="calculation-size__inner">
+                  <p class="calculation__text">Выберите длину и кол-во листов:</p>
+
+                  <div class="calculation-size__list">
+                    
+                    <div class="calculation-size__item">
+                      <div class="calculation-size__input-wrapper">
+                        <span class="calculation-size__input-text">
+                          Длина, м:
+                        </span>
+                        <input class="calculation-size__input" data-title="length" type="number" value="1">
+                      </div>
+                      <p class="sign">x</p>
+                      <div class="calculation-size__input-wrapper">
+                        <span class="calculation-size__input-text">
+                          Ширина, м:
+                        </span>
+                        <input class="calculation-size__input" data-title="width" type="text" value="0,26" disabled>
+                      </div>
+                      <p class="sign">x</p> 
+                      <div class="calculation-size__input-wrapper">
+                        <span class="calculation-size__input-text">
+                          Листов, шт:
+                        </span>
+                        <input class="calculation-size__input" data-title="sheet" type="number" value="1">
+                      </div>
+                      <p class="calculation-size__result">= 0 м² х 505 ₽ = 0 ₽</p>
+                      <img class="calculation-size__close" src="img/close.svg" alt="close">
+                    </div>
+                    <div class="calculation-size__item">
+                      <div class="calculation-size__input-wrapper">
+                        <span class="calculation-size__input-text">
+                          Длина, м:
+                        </span>
+                        <input class="calculation-size__input" type="number" value="1">
+                      </div>
+                      <p class="sign">x</p>
+                      <div class="calculation-size__input-wrapper">
+                        <span class="calculation-size__input-text">
+                          Ширина, м:
+                        </span>
+                        <input class="calculation-size__input" type="text" value="0,26" disabled>
+                      </div>
+                      <p class="sign">x</p> 
+                      <div class="calculation-size__input-wrapper">
+                        <span class="calculation-size__input-text">
+                          Листов, шт:
+                        </span>
+                        <input class="calculation-size__input" type="number" value="1">
+                      </div>
+                      <p class="calculation-size__result">= 0 м² х 505 ₽ = 0 ₽</p>
+                      <img class="calculation-size__close" src="img/close.svg" alt="close">
+                    </div>
+
+                  </div>
+
+                  <button class="calculation-size__btn">
+                    + Добавить лист другой длины
+                  </button>
+
+                </div>
+              </div>
+              <div class="calculation">
+                <div class="calculation__price">
+                  <p class="calculation__price calculation__text">Цена за</p>
+                  <div class="calculation__price-info">
+                    <div
+                      class="calculation__price-size calculation__price-block"
+                    >
+                      м<sup>2</sup>
+                    </div>
+                    <div
+                      class="calculation__price-type calculation__price-block"
+                    >
+                      лист
+                    </div>
+                    <p class="calculation__price-value">
+                      56 790 <span>₽./м²</span>
+                    </p>
+                    <p class="calculation__price-value odd">
+                      477 790 <span>₽/м²</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="calculation__count">
+                  <p class="calculation__count-text calculation__text">
+                    Кол-во
+                  </p>
+                  <div class="count-wrapper">
+                    <img class="calculation__count-btn min" src="img/min.svg" alt="svg" />
+                    <input
+                      class="calculation__count-result"
+                      type="number"
+                      value="1"
+                      placeholder="1"
+                    />
+                    <img class="calculation__count-btn plus" src="img/plus.svg" alt="svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="result">
+                <p class="result__text">Итого: 177 790 <span>₽./м²</span></p>
+                <div class="result__btns">
+                  <button class="result__btn result__btn_orange">
+                    <img
+                      class="result__btn-img"
+                      src="img/cart.svg"
+                      alt="cart"
+                    />
+                    В корзину
+                  </button>
+                  <button class="result__btn">Купить в 1 клик</button>
+                </div>
+              </div>
+              <p class="warning">
+                <img src="img/warning.svg" alt="warning" />
+                При добавлении товара в корзину, цена будет указываться за м².
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="tabs">
+      <div class="container">
+        <div class="tabs__inner">
+          <div class="help-wrapper">
+            <div class="help">
+              <div class="help__inner">
+                <h3 class="help__title title">Помочь в расчётах?</h3>
+                <p class="help__text">Быстро и просто.</p>
+                <form class="help__form">
+                  <div class="help__form-inputs">
+                    <input
+                      class="help__form-input questions__form-input"
+                      type="text"
+                      placeholder="Имя"
+                    />
+                    <input
+                      class="help__form-input questions__form-input"
+                      type="tel"
+                      placeholder="+7 (___) ___-__-__"
+                      data-phone-pattern="+7 (___) ___-__-__"
+                      data-phone-clear="false"
+                    />
+                    <input
+                      class="help__form-input questions__form-input"
+                      type="text"
+                      placeholder="Комментарий"
+                    />
+                  </div>
+                  <button class="help__form-btn btn_orange" type="submit">
+                    Отправить на расчёт
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__list">
+            <button class="tabs__item active" data-tab="description">
+              Описание
+            </button>
+            <button class="tabs__item" data-tab="specifications">
+              Характеристики
+            </button>
+            <button class="tabs__item" data-tab="delivery">Доставка</button>
+            <button class="tabs__item" data-tab="reviews">Отзывы</button>
+            <button class="tabs__item" data-tab="documentation">
+              Документация
+            </button>
+            <button class="tabs__item" data-tab="payment">Оплата</button>
+          </div>
+          <div class="tabs__content description active" id="description">
+            <div class="description__inner">
+              <h3 class="description__title title">
+                Краткое описание Сайдинг Docke LUX/ ROCKY (Кедровый Орех)
+              </h3>
+              <p class="description__text">
+                САЙДИНГ DOCKE LUX/ ROCKY (КЕДРОВЫЙ ОРЕХ) ROCKY в Барнауле от
+                производителя Docke
+              </p>
+
+              <p class="description__text">
+                Виниловый сайдинг сделает привлекательным дизайн вашего
+                сооружения не на один год. У нас представлен Виниловый сайдинг в
+                различных цветовых гаммах с доставкой по Барнаулу и всему
+                Алтайскому краю.
+              </p>
+
+              <p class="description__text">
+                Также на нашем сайте Вы можете рассчитать количество товара,
+                которое необходимо именно Вам в онлайн калькуляторе или оставив
+                заявку, мы поможем со всеми расчётами и озвучим окончательную
+                цену, необходимого количества сайдинга
+              </p>
+
+              <h3 class="description__title title">
+                Цена на Сайдинг Docke LUX/ ROCKY (Кедровый Орех)
+              </h3>
+              <p class="description__text">
+                На сегодняшний день 14 Jun 2022 цена на Сайдинг Docke LUX/ ROCKY
+                (Кедровый Орех) в "ЛайтСтрой" является самой привлекательной в
+                Барнауле! Чтобы заказать сайдинг Вы можете оставить заявку на
+                сайте или позвонить по телефону
+                <a class="tel" href="tel:79612394057">+7 (961) 239-40-57</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="tabs__content specifications" id="specifications">
+            <div class="specifications__inner">
+              <h3 class="specifications__title title">
+                Технические характеристики
+              </h3>
+
+              <div class="specification__table">
+                <div class="specification__table-row">
+                  <div class="specification__table-column">Цвет</div>
+                  <div class="specification__table-column">Кедровый орех</div>
+                </div>
+                <div class="specification__table-row">
+                  <div class="specification__table-column">Вид</div>
+                  <div class="specification__table-column">
+                    Виниловый сайдинг
+                  </div>
+                </div>
+                <div class="specification__table-row">
+                  <div class="specification__table-column">Производитель</div>
+                  <div class="specification__table-column">Docke</div>
+                </div>
+                <div class="specification__table-row">
+                  <div class="specification__table-column">
+                    Марка профнастила
+                  </div>
+                  <div class="specification__table-column">0,5</div>
+                </div>
+                <div class="specification__table-row">
+                  <div class="specification__table-column">Толщина, мм</div>
+                  <div class="specification__table-column">0,5</div>
+                </div>
+                <div class="specification__table-row">
+                  <div class="specification__table-column">
+                    Высота профиля, мм
+                  </div>
+                  <div class="specification__table-column">0,5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__content documentation" id="documentation">
+            <div class="documentation__inner">
+              <h3 class="documentation__title title">Документы</h3>
+
+              <div class="documentation__list">
+                <div class="documentation__item">
+                  <div class="documentation__item-img">
+                    <svg
+                      width="48"
+                      height="52"
+                      viewBox="0 0 48 52"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.4766 0.150793C11.0684 0.476678 9.68299 1.59166 9.07136 2.89145C8.76951 3.53308 8.76498 3.65874 8.69514 13.5381L8.62445 23.5354L5.23122 23.6048C1.98362 23.6713 1.81523 23.6881 1.30653 23.9987C1.01429 24.1772 0.600742 24.6145 0.387534 24.9707L0 25.6182V34.3658C0 39.177 0.0486362 43.2841 0.108018 43.4928C0.26552 44.045 1.04271 44.8544 1.69534 45.1456C2.18962 45.3661 2.67358 45.3988 5.47865 45.4015L8.69514 45.4045V46.7878C8.69514 47.8658 8.76258 48.3483 9.00095 48.9737C9.41521 50.0612 10.5811 51.2084 11.7359 51.665L12.5832 52H28.2769C43.335 52 43.9991 51.9893 44.6775 51.737C46.2388 51.1561 47.4186 49.9056 47.8127 48.4137C47.9632 47.8439 48 44.4006 48 30.9005V14.0965L40.8232 7.04826L33.6464 0L23.3269 0.013885C17.6511 0.0216607 12.7686 0.083172 12.4766 0.150793ZM32.335 6.90788C32.3753 11.669 32.3896 11.8986 32.6851 12.5268C33.1446 13.5036 34.1484 14.4792 35.1716 14.9432L36.053 15.3431L41.0368 15.3845L46.0206 15.4257V31.4058C46.0206 42.9776 45.9761 47.5316 45.8593 47.9147C45.6379 48.6403 45.009 49.3496 44.2795 49.6964C43.6719 49.9854 43.601 49.9866 28.2545 49.9866H12.8398L12.2166 49.6635C11.8739 49.486 11.4027 49.0745 11.1694 48.7495C10.7791 48.2059 10.7414 48.0487 10.6967 46.7857L10.6482 45.4129L21.3712 45.374C31.5337 45.3372 32.1201 45.3215 32.5891 45.0753C33.2857 44.7097 33.5692 44.4395 33.8765 43.848C34.131 43.3583 34.1443 42.8922 34.1443 34.4339C34.1443 26.5047 34.1193 25.4865 33.9151 25.0905C33.5885 24.4571 33.3041 24.1722 32.6598 23.8331C32.0979 23.5373 32.0258 23.5351 21.3816 23.4965L10.669 23.4576L10.707 13.6153L10.7452 3.77274L11.1694 3.18137C11.4027 2.85618 11.8739 2.44463 12.2166 2.26703L12.8398 1.94393H22.5664H32.293L32.335 6.90788ZM40.6842 13.4407C38.1418 13.4685 36.7158 13.4299 36.3358 13.323C35.559 13.1044 34.9087 12.5908 34.5319 11.8985C34.2279 11.34 34.2133 11.1535 34.1727 7.28972L34.1306 3.26302L39.2988 8.33111L44.4671 13.3992L40.6842 13.4407ZM31.9592 25.7508L32.3063 26.0915V34.4352V42.779L31.9574 43.1217L31.6083 43.4645L17.0288 43.4278L2.4492 43.3912L2.17888 43.0634C1.91958 42.7489 1.90869 42.4013 1.90869 34.4801C1.90869 28.9044 1.95761 26.135 2.05926 25.9483C2.14212 25.7963 2.34896 25.6169 2.51876 25.5497C2.68913 25.4824 9.2833 25.4235 17.2199 25.4186L31.6123 25.4099L31.9592 25.7508ZM7.13991 31.0296V31.7897L9.19027 31.828L11.2406 31.8665L9.11958 34.4122C7.02256 36.929 6.99853 36.9657 6.99853 37.643V38.3281L10.3564 38.2909L13.7143 38.2537L13.757 37.5247L13.7998 36.7957H11.6716C10.5012 36.7957 9.54514 36.7489 9.54712 36.6916C9.54924 36.6342 10.5036 35.4428 11.6679 34.0437C13.6881 31.6164 13.785 31.4719 13.785 30.8848V30.2697H10.4624H7.13991V31.0296ZM16.3299 34.227V38.1842H17.1782H18.0265V34.227V30.2697H17.1782H16.3299V34.227ZM20.8542 34.227V38.1842H21.7732H22.6922V36.9346V35.6849L24 35.6835C25.0757 35.6824 25.4332 35.6244 26.0147 35.3561C26.8291 34.9804 27.1192 34.6977 27.4232 33.9834C28.0314 32.5537 27.1923 30.8239 25.6922 30.4147C25.4031 30.3358 24.1961 30.2709 23.0103 30.2705L20.8542 30.2697V34.227ZM25.3406 32.0816C26.0115 32.4977 25.9852 33.5515 25.2962 33.8598C25.1008 33.9472 24.435 34.0187 23.8166 34.0187H22.6922V32.8905V31.7622L23.8586 31.824C24.5122 31.8586 25.1637 31.9717 25.3406 32.0816Z"
+                        fill="#CECECE"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="documentation__item-info">
+                    <a class="documentation__item-link" href="#">
+                      Общие условия предоставления, обслуживания и погашения
+                      жилищных кредитов (займов)
+                    </a>
+                    <p class="documentation__item-memory">(ZIP, 91 КБ)</p>
+                  </div>
+                </div>
+                <div class="documentation__item">
+                  <div class="documentation__item-img">
+                    <svg
+                      width="48"
+                      height="52"
+                      viewBox="0 0 48 52"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.4766 0.150793C11.0684 0.476678 9.68299 1.59166 9.07136 2.89145C8.76951 3.53308 8.76498 3.65875 8.69514 13.5381L8.62445 23.5354L5.23122 23.6048C1.98362 23.6713 1.81523 23.6881 1.30653 23.9987C1.01429 24.1772 0.600742 24.6145 0.387534 24.9707L0 25.6182V34.3658C0 39.177 0.0486362 43.2841 0.108018 43.4928C0.26552 44.045 1.04271 44.8544 1.69534 45.1456C2.18962 45.3661 2.67358 45.3988 5.47865 45.4015L8.69514 45.4045V46.7878C8.69514 47.8658 8.76258 48.3483 9.00095 48.9737C9.41521 50.0612 10.5811 51.2084 11.7359 51.665L12.5832 52H28.2769C43.335 52 43.9991 51.9893 44.6775 51.737C46.2388 51.1561 47.4186 49.9056 47.8127 48.4137C47.9632 47.8439 48 44.4006 48 30.9005V14.0965L40.8232 7.04826L33.6464 0L23.3269 0.013885C17.6511 0.0216607 12.7686 0.083172 12.4766 0.150793ZM32.335 6.90788C32.3753 11.669 32.3896 11.8986 32.6851 12.5268C33.1446 13.5036 34.1484 14.4792 35.1716 14.9432L36.053 15.3431L41.0368 15.3845L46.0206 15.4257V31.4058C46.0206 43.6477 45.9799 47.5194 45.8467 47.9572C45.6223 48.6949 44.7053 49.5955 43.9541 49.8159C43.1815 50.0426 13.5773 50.0634 12.7499 49.8378C12.0918 49.6583 11.1238 48.8279 10.865 48.2207C10.753 47.9579 10.6745 47.2577 10.6745 46.5198V45.2657H21.3399C28.5167 45.2657 32.1354 45.2175 32.4032 45.1184C32.943 44.9184 33.7113 44.1832 33.9491 43.6386C34.1083 43.2743 34.1443 41.5638 34.1443 34.3633C34.1443 26.4993 34.1193 25.4864 33.9151 25.0905C33.5885 24.4571 33.3041 24.1722 32.6598 23.8331C32.0979 23.5373 32.0258 23.5351 21.3816 23.4965L10.669 23.4576L10.707 13.6153L10.7452 3.77274L11.1694 3.18137C11.4027 2.85618 11.8739 2.44463 12.2166 2.26703L12.8398 1.94393H22.5664H32.293L32.335 6.90788ZM40.6842 13.4407C38.1418 13.4685 36.7158 13.4299 36.3358 13.323C35.559 13.1044 34.9087 12.5908 34.5319 11.8985C34.2279 11.34 34.2133 11.1535 34.1727 7.28972L34.1306 3.26302L39.2988 8.33111L44.4671 13.3992L40.6842 13.4407ZM31.9592 25.7508L32.3063 26.0915V34.4352V42.779L31.9574 43.1217L31.6083 43.4645L17.0288 43.4278L2.4492 43.3912L2.17888 43.0634C1.91958 42.7489 1.90869 42.4013 1.90869 34.4801C1.90869 28.9044 1.95761 26.135 2.05926 25.9483C2.14212 25.7963 2.34896 25.6169 2.51876 25.5497C2.68913 25.4824 9.2833 25.4235 17.2199 25.4186L31.6123 25.4099L31.9592 25.7508ZM25.7957 30.3123C23.858 30.8486 22.6362 32.4176 22.6392 34.3658C22.6431 37.0673 25.1172 39.0197 27.8345 38.4657C28.5984 38.3099 29.9027 37.588 30.0063 37.2635C30.034 37.177 29.7994 36.9064 29.4851 36.6619L28.9137 36.2174L28.4235 36.5148C27.2622 37.2198 26.1728 37.1308 25.2358 36.2546C24.2836 35.364 24.1657 33.999 24.9494 32.9366C25.7359 31.8702 27.0959 31.596 28.2639 32.2682L28.9217 32.6468L29.4829 32.2103C29.7917 31.9702 30.0442 31.7282 30.0442 31.6725C30.0442 31.6168 29.8692 31.4068 29.6554 31.2057C28.7762 30.3788 27.0222 29.9728 25.7957 30.3123ZM15.816 30.4209C13.8828 30.9712 12.4997 33.1963 12.9265 35.0694C13.5863 37.9651 16.7362 39.4177 19.2359 37.9789C20.9004 37.0209 21.6882 34.8858 21.0613 33.032C20.7257 32.0395 19.5178 30.8318 18.5315 30.5024C17.7847 30.253 16.5373 30.2155 15.816 30.4209ZM4.06268 34.4005L4.10015 38.3925L6.22091 38.3843C8.22391 38.3764 8.38876 38.3549 9.18999 37.9949C10.7882 37.2768 11.5242 36.2652 11.6325 34.638C11.7181 33.3518 11.3444 32.4563 10.359 31.5861C9.32501 30.6732 8.32754 30.4085 5.92104 30.4085H4.02507L4.06268 34.4005ZM17.9243 31.9442C18.2181 32.0244 18.6888 32.2886 18.9704 32.5315C20.7927 34.1027 19.68 36.9743 17.2489 36.9743C15.3387 36.9743 14.1086 35.0972 14.8991 33.3882C15.1976 32.7426 15.8978 32.1116 16.4468 31.9931C16.6547 31.9483 16.8884 31.8908 16.9661 31.8652C17.2182 31.7828 17.3812 31.7961 17.9243 31.9442ZM8.23819 32.1509C9.31907 32.5944 9.82622 33.3373 9.82622 34.4772C9.82622 35.3428 9.47459 35.9715 8.70617 36.48C8.30464 36.7457 8.04251 36.7957 7.0483 36.7957H5.86745V34.3658V31.9359H6.79097C7.30477 31.9359 7.94694 32.0313 8.23819 32.1509Z"
+                        fill="#CECECE"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="documentation__item-info">
+                    <a class="documentation__item-link" href="#">
+                      Типовая форма Кредитного договора/ Договора займа для
+                      применения по ипотечным продуктам в рамках кредитования
+                      физических лиц
+                    </a>
+                    <p class="documentation__item-memory">(PDF, 122 КБ)</p>
+                  </div>
+                </div>
+                <div class="documentation__item">
+                  <div class="documentation__item-img">
+                    <svg
+                      width="48"
+                      height="52"
+                      viewBox="0 0 48 52"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.4889 0.131983C11.0436 0.471747 9.58697 1.73707 9.06806 3.10321C8.76688 3.89609 8.76363 4.00888 8.76363 13.7043V23.5039H5.7904C3.99181 23.5039 2.55849 23.568 2.16243 23.6664C1.27612 23.8861 0.397299 24.7517 0.174204 25.6247C-0.0580682 26.5331 -0.0580682 42.4488 0.174204 43.3572C0.397299 44.2302 1.27612 45.0958 2.16243 45.3156C2.55849 45.4139 3.99181 45.478 5.7904 45.478H8.76363V46.7939C8.76363 47.8013 8.83508 48.298 9.06806 48.9114C9.45495 49.9298 10.5127 51.0494 11.5722 51.5619L12.3642 51.945L28.0262 51.9827C45.3382 52.0245 44.467 52.0659 45.8469 51.1359C46.2251 50.8811 46.7715 50.333 47.0612 49.918C48.0683 48.4754 48.0246 49.3828 47.9834 30.7595L47.9464 14.0444L40.8129 7.02211L33.6795 0L23.3042 0.0141854C17.5979 0.0221128 12.7309 0.0751009 12.4889 0.131983ZM32.3439 6.73992C32.3439 11.3079 32.3582 11.5705 32.6483 12.3343C33.0352 13.3527 34.0929 14.4723 35.1525 14.9848L35.9445 15.3679L40.9924 15.4108L46.0402 15.4535V31.3777C46.0402 43.0561 45.9963 47.4739 45.8753 47.9467C45.6694 48.7526 44.7498 49.7045 43.9718 49.9172C43.6014 50.0186 38.5873 50.0663 28.2415 50.0667L13.0551 50.0675L12.3118 49.7027C11.8281 49.4653 11.4364 49.1413 11.1899 48.7747C10.8556 48.2777 10.8052 48.0502 10.7625 46.8447L10.714 45.478H21.1133C28.5732 45.478 31.6979 45.4321 32.1675 45.3156C33.0538 45.0958 33.9327 44.2302 34.1558 43.3572C34.388 42.4488 34.388 26.5331 34.1558 25.6247C33.9327 24.7517 33.0538 23.8861 32.1675 23.6664C31.6979 23.5498 28.5763 23.5039 21.1266 23.5039H10.7404V13.8125C10.7404 4.24795 10.7444 4.11319 11.0372 3.5171C11.3525 2.87568 11.9508 2.35443 12.6466 2.11494C12.9249 2.01911 16.3765 1.96529 22.7071 1.95806L32.3439 1.94707V6.73992ZM40.5757 13.4579L36.6626 13.4949L35.908 13.1313C35.4052 12.8889 35.0263 12.5785 34.7724 12.2008L34.3913 11.6339L34.3516 7.52056L34.3119 3.40737L39.4003 8.41412L44.4887 13.4209L40.5757 13.4579ZM31.9973 25.7924L32.3439 26.1337V34.491V42.8482L31.9973 43.1895L31.6508 43.5309H17.165H2.67922L2.33272 43.1895L1.98607 42.8482V34.491V26.1337L2.33272 25.7924L2.67922 25.451H17.165H31.6508L31.9973 25.7924ZM23.6837 30.4804C21.9691 30.9541 21.2335 33.1448 22.4224 34.2371C22.9657 34.7364 23.2486 34.8609 24.7234 35.2496C25.4339 35.437 26.1049 35.6634 26.2143 35.7529C26.5468 36.0247 26.4596 36.68 26.0563 36.9402C25.4825 37.3107 24.0388 37.1381 23.1477 36.5925L22.4416 36.1602L22.0625 36.5977C21.4234 37.3355 21.4245 37.3529 22.1445 37.8079C23.9752 38.9649 26.4738 38.9141 27.59 37.6972C28.4585 36.7504 28.4599 35.4766 27.5933 34.6715C27.1298 34.241 26.4526 33.9787 24.6196 33.5196C23.6116 33.2672 23.3011 32.6889 23.8719 32.1267C24.3589 31.647 25.803 31.7991 26.7185 32.4266L27.0943 32.6842L27.5304 32.0998C27.7705 31.7786 27.9667 31.4692 27.9667 31.4126C27.9667 31.3559 27.5543 31.1096 27.0502 30.8652C26.0265 30.3689 24.655 30.2121 23.6837 30.4804ZM6.39304 30.9097C6.58324 31.1584 7.26099 32.0685 7.89935 32.9325L9.05973 34.5031L8.32069 35.5054C7.91418 36.0565 7.24151 36.9612 6.82567 37.5159L6.06969 38.5242L7.09904 38.5214L8.12824 38.5185L9.10209 37.1959L10.0758 35.8731L11.0556 37.1986L12.0352 38.5242H13.0116C13.5486 38.5242 13.9859 38.4773 13.9833 38.4199C13.9807 38.3624 13.3463 37.4707 12.5733 36.438C11.8004 35.4054 11.1934 34.4911 11.2245 34.4064C11.2555 34.3217 11.8901 33.4379 12.6345 32.4424C13.3789 31.447 13.988 30.5932 13.988 30.5451C13.988 30.4971 13.5551 30.4577 13.0259 30.4577H12.0639L11.0971 31.779C10.5655 32.5056 10.1207 33.1002 10.1087 33.1002C10.0968 33.1002 9.65206 32.5056 9.1203 31.779L8.15365 30.4577H7.10045H6.04738L6.39304 30.9097ZM15.1176 34.491V38.5242H18.0122H20.9068V37.7593V36.9943H18.8594H16.812V33.726V30.4577H15.9648H15.1176V34.491Z"
+                        fill="#CECECE"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="documentation__item-info">
+                    <a class="documentation__item-link" href="#">
+                      Общие условия предоставления, обслуживания и погашения
+                      жилищных кредитов (займов)
+                    </a>
+                    <p class="documentation__item-memory">(XLS, 122 КБ)</p>
+                  </div>
+                </div>
+                <div class="documentation__item">
+                  <div class="documentation__item-img">
+                    <svg
+                      width="48"
+                      height="52"
+                      viewBox="0 0 48 52"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.4766 0.150793C11.0684 0.476678 9.68299 1.59166 9.07136 2.89145C8.76951 3.53308 8.76498 3.65874 8.69514 13.5381L8.62445 23.5354L5.23122 23.6048C1.98362 23.6713 1.81523 23.6881 1.30653 23.9987C1.01429 24.1772 0.600742 24.6145 0.387534 24.9707L0 25.6182V34.3658C0 39.177 0.0486362 43.2841 0.108018 43.4928C0.26552 44.045 1.04271 44.8544 1.69534 45.1456C2.18962 45.3661 2.67358 45.3988 5.47865 45.4015L8.69514 45.4045V46.7878C8.69514 47.8658 8.76258 48.3483 9.00095 48.9737C9.41521 50.0612 10.5811 51.2084 11.7359 51.665L12.5832 52H28.2769C43.335 52 43.9991 51.9893 44.6775 51.737C46.2388 51.1561 47.4186 49.9056 47.8127 48.4137C47.9632 47.8439 48 44.4006 48 30.9005V14.0965L40.8232 7.04826L33.6464 0L23.3269 0.013885C17.6511 0.0216607 12.7686 0.083172 12.4766 0.150793ZM32.335 6.90788C32.3753 11.669 32.3896 11.8986 32.6851 12.5268C33.1446 13.5036 34.1484 14.4792 35.1716 14.9432L36.053 15.3431L41.0368 15.3845L46.0206 15.4257V31.4058C46.0206 43.6477 45.9799 47.5194 45.8467 47.9572C45.6223 48.6949 44.7053 49.5955 43.9541 49.8159C43.1815 50.0426 13.5773 50.0634 12.7499 49.8378C12.0918 49.6583 11.1238 48.8279 10.865 48.2207C10.753 47.9579 10.6745 47.2577 10.6745 46.5198V45.2657H21.3399C28.5167 45.2657 32.1354 45.2175 32.4032 45.1184C32.943 44.9184 33.7113 44.1832 33.9491 43.6386C34.1083 43.2743 34.1443 41.5638 34.1443 34.3633C34.1443 26.4993 34.1193 25.4864 33.9151 25.0905C33.5885 24.4571 33.3041 24.1722 32.6598 23.8331C32.0979 23.5373 32.0258 23.5351 21.3816 23.4965L10.669 23.4576L10.707 13.6153L10.7452 3.77274L11.1694 3.18137C11.4027 2.85618 11.8739 2.44463 12.2166 2.26703L12.8398 1.94393H22.5664H32.293L32.335 6.90788ZM40.6842 13.4407C38.1418 13.4685 36.7158 13.4299 36.3358 13.323C35.559 13.1044 34.9087 12.5908 34.5319 11.8985C34.2279 11.34 34.2133 11.1535 34.1727 7.28972L34.1306 3.26302L39.2988 8.33111L44.4671 13.3992L40.6842 13.4407ZM31.9592 25.7508L32.3063 26.0915V34.4352V42.779L31.9574 43.1217L31.6083 43.4645L17.0288 43.4278L2.4492 43.3912L2.17888 43.0634C1.91958 42.7489 1.90869 42.4013 1.90869 34.4801C1.90869 28.9044 1.95761 26.135 2.05926 25.9483C2.14212 25.7963 2.34896 25.6169 2.51876 25.5497C2.68913 25.4824 9.2833 25.4235 17.2199 25.4186L31.6123 25.4099L31.9592 25.7508ZM5.01915 34.4352V38.462H5.86745H6.71576V37.1429V35.8238H7.89179C8.53877 35.8238 9.3834 35.7317 9.7691 35.6192C12.3366 34.8704 12.2888 31.4181 9.69911 30.5666C9.42581 30.4767 8.3127 30.4085 7.11885 30.4085H5.01915V34.4352ZM13.3941 34.4005L13.4315 38.3925L15.5523 38.3843C17.5553 38.3764 17.7201 38.3549 18.5214 37.9949C20.1196 37.2768 20.8556 36.2652 20.9639 34.638C21.0494 33.3518 20.6758 32.4563 19.6903 31.5861C18.6564 30.6732 17.6589 30.4085 15.2524 30.4085H13.3564L13.3941 34.4005ZM22.975 34.4352V38.462H23.894H24.813V36.8652V35.2684H26.7923H28.7717V34.5047V33.741H26.7923H24.813V32.8385V31.9359H27.0751H29.3373V31.1722V30.4085H26.1561H22.975V34.4352ZM9.18956 32.135C9.96491 32.4533 10.0639 33.4184 9.3728 33.9233C9.08861 34.1309 8.69754 34.2195 7.85291 34.2674L6.71576 34.3321V33.1339V31.9359H7.70997C8.25685 31.9359 8.92263 32.0255 9.18956 32.135ZM17.8498 32.2304C19.6169 33.0706 19.7337 35.559 18.0496 36.4886C17.6025 36.7355 17.2678 36.7957 16.346 36.7957H15.1988V34.3658V31.9359H16.2145C16.9608 31.9359 17.3948 32.0141 17.8498 32.2304Z"
+                        fill="#CECECE"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="documentation__item-info">
+                    <a class="documentation__item-link" href="#">
+                      Общие условия предоставления, обслуживания и погашения
+                      жилищных кредитов (займов)
+                    </a>
+                    <p class="documentation__item-memory">(PDF, 165 КБ)</p>
+                  </div>
+                </div>
+              </div>
+              <p class="documentation__warning">
+                Процентная ставка по всем видам потребительского кредита указана
+                для Головного офиса Банка.
+              </p>
+            </div>
+          </div>
+
+          <div class="help mobile">
+            <div class="help__inner">
+              <h3 class="help__title title">Помочь в расчётах?</h3>
+              <p class="help__text">Быстро и просто.</p>
+              <form class="help__form">
+                <div class="help__form-inputs">
+                  <input
+                    class="help__form-input questions__form-input"
+                    type="text"
+                    placeholder="Имя"
+                  />
+                  <input
+                    class="help__form-input questions__form-input"
+                    type="tel"
+                    placeholder="+7 (___) ___-__-__"
+                    data-phone-pattern="+7 (___) ___-__-__"
+                    data-phone-clear="false"
+                  />
+                  <input
+                    class="help__form-input questions__form-input"
+                    type="text"
+                    placeholder="Комментарий"
+                  />
+                </div>
+                <button class="help__form-btn btn_orange" type="submit">
+                  Отправить на расчёт
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="tabs__content delivery" id="delivery">
+            <div class="delivery__inner">
+              <div class="delivery__title-block">
+                <h3 class="delivery__title title">Доставка</h3>
+                <p class="delivery__subtitle">Бортовая машина</p>
+              </div>
+              <div class="delivery__table-wrapper">
+                <div class="delivery__table">
+                  <h4 class="delivery__table-title">
+                    Склад: Протвино - Индустриальный
+                  </h4>
+                  <div class="delivery__table-row row-title">
+                    <div class="delivery__table-column">г/п</div>
+                    <div class="delivery__table-column">Длина кузова</div>
+                    <div class="delivery__table-column">Зона доставки</div>
+                    <div class="delivery__table-column">Доставка, р.</div>
+                    <div class="delivery__table-column">Доп. км., р.</div>
+                  </div>
+
+                  <div class="delivery__table-row">
+                    <div class="delivery__table-column">1,5</div>
+                    <div class="delivery__table-column">3,0</div>
+                    <div class="delivery__table-column">50 км от склада</div>
+                    <div class="delivery__table-column">4703</div>
+                    <div class="delivery__table-column">36</div>
+                  </div>
+
+                  <div class="delivery__table-row">
+                    <div class="delivery__table-column">1,5</div>
+                    <div class="delivery__table-column">1,5</div>
+                    <div class="delivery__table-column">150 км от склада</div>
+                    <div class="delivery__table-column">4703</div>
+                    <div class="delivery__table-column">36</div>
+                  </div>
+
+                  <div class="delivery__table-row">
+                    <div class="delivery__table-column">1,5</div>
+                    <div class="delivery__table-column">1,5</div>
+                    <div class="delivery__table-column">50 км от склада</div>
+                    <div class="delivery__table-column">4703</div>
+                    <div class="delivery__table-column">36</div>
+                  </div>
+
+                  <div class="delivery__table-row">
+                    <div class="delivery__table-column">1,5</div>
+                    <div class="delivery__table-column">1,5</div>
+                    <div class="delivery__table-column">150 км от склада</div>
+                    <div class="delivery__table-column">4703</div>
+                    <div class="delivery__table-column">36</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__content reviews" id="reviews">
+            <div class="reviews__inner">
+              <div class="reviews__header">
+                <h3 class="reviews__title title">
+                  Отзывы клиентов о товаре «Сайдинг Docke LUX/ ROCKY (Кедровый
+                  Орех)»
+                </h3>
+                <button class="reviews__header-btn btn_orange">
+                  Добавить отзыв
+                  <img src="img/arrow-bottom-white.svg" alt="arrow" />
+                </button>
+              </div>
+
+              <div class="reviews__tabs">
+                <div class="reviews__tabs-list">
+                  <button
+                    class="reviews__tabs-item active"
+                    data-reviewsTab="all"
+                  >
+                    Все 
+                  </button>
+                  <button class="reviews__tabs-item" data-reviewsTab="gis">
+                    <img src="img/reviews-icon-1.svg" alt="reviews" />
+                    2 гис
+                  </button>
+                  <button class="reviews__tabs-item" data-reviewsTab="yandex">
+                    <img src="img/reviews-icon-2.svg" alt="reviews" />
+                    Яндекс
+                  </button>
+                  <button class="reviews__tabs-item" data-reviewsTab="gis">
+                    <img src="img/reviews-icon-3.svg" alt="reviews" />
+                    2 гис
+                  </button>
+                  <button class="reviews__tabs-item" data-reviewsTab="flamp">
+                    <img src="img/reviews-icon-4.svg" alt="reviews" />
+                    Фламп
+                  </button>
+                  <button
+                    class="reviews__tabs-item"
+                    data-reviewsTab="instagram"
+                  >
+                    <img src="img/reviews-icon-5.svg" alt="reviews" />
+                    Инстаграмм
+                  </button>
+                  <button class="reviews__tabs-item" data-reviewsTab="inpage">
+                    <img src="img/reviews-icon-6.svg" alt="reviews" />
+                    На сайте
+                  </button>
+                </div>
+
+                <div class="reviews__content">
+                  <div class="reviews__list">
+                    <div class="reviews__item">
+                      <div class="reviews__item-header">
+                        <div class="reviews__item-info">
+                          <h4 class="reviews__item-title">Анастасия Дунаева</h4>
+                          <p class="reviews__item-date">12.07.2021</p>
+                        </div>
+                        <div class="rating-result" data-total-value="2">
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <p class="reviews__item-text">
+                        Заказывала родителям виниловый сайдинг под дерево. В
+                        принципе в городе ассортимент у всех одинаковый, но
+                        выбрала эту компанию тк у них все было в наличии. Пришли
+                        утром выбрали, оплатили и вечером уже привезли. И ксати
+                        еще хороший момент, думали будем мотаться по другим
+                        магазинам в поисках утепления и крепежей, оказывается
+                        все это у них есть. Будем рекомендовать вас, и будем
+                        надеяться на будущую скидку)))
+                      </p>
+
+                      <div class="reviews__item-footer">
+                        <div class="reviews__item-original">
+                          <img src="img/reviews-icon-1.svg" alt="reviews" />
+                          <a href="#">Смотреть оригинал</a>
+                        </div>
+                        <div class="reviews__gallery">
+                          <div class="reviews__gallery-list">
+                            <img
+                              class="reviews__item-img"
+                              src="img/reviews-img-1.png"
+                              alt="reviews"
+                            />
+                            <img
+                              class="reviews__item-img"
+                              src="img/reviews-img-1.png"
+                              alt="reviews"
+                            />
+                            <img
+                              class="reviews__item-img"
+                              src="img/reviews-img-1.png"
+                              alt="reviews"
+                            />
+                            <img
+                              class="reviews__item-img"
+                              src="img/reviews-img-1.png"
+                              alt="reviews"
+                            />
+                          </div>
+                          <button class="reviews__gallery-btn">
+                            <img src="img/arrow-right.svg" alt="arrow" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="reviews__item">
+                      <div class="reviews__item-header">
+                        <div class="reviews__item-info">
+                          <h4 class="reviews__item-title">Анастасия Дунаева</h4>
+                          <p class="reviews__item-date">12.07.2021</p>
+                        </div>
+                        <div class="rating-result" data-total-value="2">
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <p class="reviews__item-text">
+                        Заказывала родителям виниловый сайдинг под дерево. В
+                        принципе в городе ассортимент у всех одинаковый, но
+                        выбрала эту компанию тк у них все было в наличии. Пришли
+                        утром выбрали, оплатили и вечером уже привезли. И ксати
+                        еще хороший момент, думали будем мотаться по другим
+                        магазинам в поисках утепления и крепежей, оказывается
+                        все это у них есть. Будем рекомендовать вас, и будем
+                        надеяться на будущую скидку)))
+                      </p>
+                    </div>
+
+                    <div class="reviews__item">
+                      <div class="reviews__item-header">
+                        <div class="reviews__item-info">
+                          <h4 class="reviews__item-title">Анастасия Дунаева</h4>
+                          <p class="reviews__item-date">12.07.2021</p>
+                        </div>
+                        <div class="rating-result" data-total-value="2">
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <p class="reviews__item-text">
+                        Заказывала родителям виниловый сайдинг под дерево. В
+                        принципе в городе ассортимент у всех одинаковый, но
+                        выбрала эту компанию тк у них все было в наличии. Пришли
+                        утром выбрали, оплатили и вечером уже привезли. И ксати
+                        еще хороший момент, думали будем мотаться по другим
+                        магазинам в поисках утепления и крепежей, оказывается
+                        все это у них есть. Будем рекомендовать вас, и будем
+                        надеяться на будущую скидку)))
+                      </p>
+
+                      <div class="reviews__item-footer">
+                        <div class="reviews__item-original">
+                          <img src="img/reviews-icon-1.svg" alt="reviews" />
+                          <a href="#">Смотреть оригинал</a>
+                        </div>
+                        <div class="reviews__gallery">
+                          <div class="reviews__gallery-list">
+                            <img
+                              class="reviews__item-img"
+                              src="img/reviews-img-1.png"
+                              alt="reviews"
+                            />
+                            <img
+                              class="reviews__item-img"
+                              src="img/reviews-img-1.png"
+                              alt="reviews"
+                            />
+                            <img
+                              class="reviews__item-img"
+                              src="img/reviews-img-1.png"
+                              alt="reviews"
+                            />
+                            <img
+                              class="reviews__item-img"
+                              src="img/reviews-img-1.png"
+                              alt="reviews"
+                            />
+                          </div>
+                          <button class="reviews__gallery-btn">
+                            <img src="img/arrow-right.svg" alt="arrow" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="reviews__item">
+                      <div class="reviews__item-header">
+                        <div class="reviews__item-info">
+                          <h4 class="reviews__item-title">Анастасия Дунаева</h4>
+                          <p class="reviews__item-date">12.07.2021</p>
+                        </div>
+                        <div class="rating-result" data-total-value="2">
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <p class="reviews__item-text">
+                        Заказывала родителям виниловый сайдинг под дерево. В
+                        принципе в городе ассортимент у всех одинаковый, но
+                        выбрала эту компанию тк у них все было в наличии. Пришли
+                        утром выбрали, оплатили и вечером уже привезли. И ксати
+                        еще хороший момент, думали будем мотаться по другим
+                        магазинам в поисках утепления и крепежей, оказывается
+                        все это у них есть. Будем рекомендовать вас, и будем
+                        надеяться на будущую скидку)))
+                      </p>
+
+                      <div class="reviews__item-footer">
+                        <div class="reviews__item-original">
+                          <img src="img/reviews-icon-1.svg" alt="reviews" />
+                          <a href="#">Смотреть оригинал</a>
+                        </div>
+                        <div class="reviews__gallery">
+                          <div class="reviews__gallery-list">
+                            <img
+                              class="reviews__item-img"
+                              src="img/reviews-img-1.png"
+                              alt="reviews"
+                            />
+                            <img
+                              class="reviews__item-img"
+                              src="img/reviews-img-1.png"
+                              alt="reviews"
+                            />
+                            <img
+                              class="reviews__item-img"
+                              src="img/reviews-img-1.png"
+                              alt="reviews"
+                            />
+                            <img
+                              class="reviews__item-img"
+                              src="img/reviews-img-1.png"
+                              alt="reviews"
+                            />
+                          </div>
+                          <button class="reviews__gallery-btn">
+                            <img src="img/arrow-right.svg" alt="arrow" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="need">
+      <div class="container">
+        <h3 class="need__title title">С этим товаром понадобится</h3>
+        <div class="need-slider-wrapper">
+          <div class="need-prev"></div>
+          <div class="swiper need-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="need__item">
+                  <div class="need__item-header">
+                    <div class="need__item-stock card__header-stock yes">
+                      <img src="img/ready.svg" alt="ready" />
+                      <span>В наличии</span>
+                    </div>
+                    <div class="rating-result" data-total-value="2">
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <img class="need__item-img" src="img/need-1.png" alt="need" />
+                  <div class="need__item-info">
+                    <h5 class="need__item-title">
+                      Профлист МП-20 Ecosteel Золотой дуб текстурированный
+                    </h5>
+                    <a class="need__item-text" href="#">
+                      С этим товаром понадобится
+                    </a>
+                    <div class="need__item-price">
+                      <span>Цена за</span>
+                      <div
+                        class="need__item-size calculation__price-size calculation__price-block"
+                      >
+                        м<sup>2</sup>
+                      </div>
+                      <div
+                        class="need__item-type calculation__price-type calculation__price-block"
+                      >
+                        лист
+                      </div>
+                    </div>
+                    <div class="need__item-result">
+                      <h6 class="need-result-price">
+                        77 790 <span>руб./кв.</span>
+                      </h6>
+                      <div class="count-wrapper">
+                        <img
+                          class="calculation__count-btn min"
+                          src="img/min.svg"
+                          alt="svg"
+                        />
+                        <input
+                          class="calculation__count-result"
+                          type="number"
+                          value="1"
+                          placeholder="1"
+                        />
+                        <img
+                          class="calculation__count-btn plus"
+                          src="img/plus-gray.svg"
+                          alt="svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="need__item-btns">
+                    <button class="need__item-btn">Купить в 1 клик</button>
+                    <button class="need__item-btn need__item-btn_orange">
+                      <img src="img/cart.svg" alt="cart" />
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="need__item">
+                  <div class="need__item-header">
+                    <div class="need__item-stock card__header-stock yes">
+                      <img src="img/ready.svg" alt="ready" />
+                      <span>В наличии</span>
+                    </div>
+                    <div class="rating-result" data-total-value="2">
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <img class="need__item-img" src="img/need-1.png" alt="need" />
+                  <div class="need__item-info">
+                    <h5 class="need__item-title">
+                      Профлист МП-20 Ecosteel Золотой дуб текстурированный
+                    </h5>
+                    <a class="need__item-text" href="#">
+                      С этим товаром понадобится
+                    </a>
+                    <div class="need__item-price">
+                      <span>Цена за</span>
+                      <div
+                        class="need__item-size calculation__price-size calculation__price-block"
+                      >
+                        м<sup>2</sup>
+                      </div>
+                      <div
+                        class="need__item-type calculation__price-type calculation__price-block"
+                      >
+                        лист
+                      </div>
+                    </div>
+                    <div class="need__item-result">
+                      <h6 class="need-result-price">
+                        77 790 <span>руб./кв.</span>
+                      </h6>
+                      <div class="count-wrapper">
+                        <img
+                          class="calculation__count-btn min"
+                          src="img/min.svg"
+                          alt="svg"
+                        />
+                        <input
+                          class="calculation__count-result"
+                          type="number"
+                          value="1"
+                          placeholder="1"
+                        />
+                        <img
+                          class="calculation__count-btn plus"
+                          src="img/plus-gray.svg"
+                          alt="svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="need__item-btns">
+                    <button class="need__item-btn">Купить в 1 клик</button>
+                    <button class="need__item-btn need__item-btn_orange">
+                      <img src="img/cart.svg" alt="cart" />
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="need__item">
+                  <div class="need__item-header">
+                    <div class="need__item-stock card__header-stock yes">
+                      <img src="img/ready.svg" alt="ready" />
+                      <span>В наличии</span>
+                    </div>
+                    <div class="rating-result" data-total-value="2">
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <img class="need__item-img" src="img/need-1.png" alt="need" />
+                  <div class="need__item-info">
+                    <h5 class="need__item-title">
+                      Профлист МП-20 Ecosteel Золотой дуб текстурированный
+                    </h5>
+                    <a class="need__item-text" href="#">
+                      С этим товаром понадобится
+                    </a>
+                    <div class="need__item-price">
+                      <span>Цена за</span>
+                      <div
+                        class="need__item-size calculation__price-size calculation__price-block"
+                      >
+                        м<sup>2</sup>
+                      </div>
+                      <div
+                        class="need__item-type calculation__price-type calculation__price-block"
+                      >
+                        лист
+                      </div>
+                    </div>
+                    <div class="need__item-result">
+                      <h6 class="need-result-price">
+                        77 790 <span>руб./кв.</span>
+                      </h6>
+                      <div class="count-wrapper">
+                        <img
+                          class="calculation__count-btn min"
+                          src="img/min.svg"
+                          alt="svg"
+                        />
+                        <input
+                          class="calculation__count-result"
+                          type="number"
+                          value="1"
+                          placeholder="1"
+                        />
+                        <img
+                          class="calculation__count-btn plus"
+                          src="img/plus-gray.svg"
+                          alt="svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="need__item-btns">
+                    <button class="need__item-btn">Купить в 1 клик</button>
+                    <button class="need__item-btn need__item-btn_orange">
+                      <img src="img/cart.svg" alt="cart" />
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="need__item">
+                  <div class="need__item-header">
+                    <div class="need__item-stock card__header-stock yes">
+                      <img src="img/ready.svg" alt="ready" />
+                      <span>В наличии</span>
+                    </div>
+                    <div class="rating-result" data-total-value="2">
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <img class="need__item-img" src="img/need-1.png" alt="need" />
+                  <div class="need__item-info">
+                    <h5 class="need__item-title">
+                      Профлист МП-20 Ecosteel Золотой дуб текстурированный
+                    </h5>
+                    <a class="need__item-text" href="#">
+                      С этим товаром понадобится
+                    </a>
+                    <div class="need__item-price">
+                      <span>Цена за</span>
+                      <div
+                        class="need__item-size calculation__price-size calculation__price-block"
+                      >
+                        м<sup>2</sup>
+                      </div>
+                      <div
+                        class="need__item-type calculation__price-type calculation__price-block"
+                      >
+                        лист
+                      </div>
+                    </div>
+                    <div class="need__item-result">
+                      <h6 class="need-result-price">
+                        77 790 <span>руб./кв.</span>
+                      </h6>
+                      <div class="count-wrapper">
+                        <img
+                          class="calculation__count-btn min"
+                          src="img/min.svg"
+                          alt="svg"
+                        />
+                        <input
+                          class="calculation__count-result"
+                          type="number"
+                          value="1"
+                          placeholder="1"
+                        />
+                        <img
+                          class="calculation__count-btn plus"
+                          src="img/plus-gray.svg"
+                          alt="svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="need__item-btns">
+                    <button class="need__item-btn">Купить в 1 клик</button>
+                    <button class="need__item-btn need__item-btn_orange">
+                      <img src="img/cart.svg" alt="cart" />
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="need__item">
+                  <div class="need__item-header">
+                    <div class="need__item-stock card__header-stock yes">
+                      <img src="img/ready.svg" alt="ready" />
+                      <span>В наличии</span>
+                    </div>
+                    <div class="rating-result" data-total-value="2">
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                      <i class="rating-result-item fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <img class="need__item-img" src="img/need-1.png" alt="need" />
+                  <div class="need__item-info">
+                    <h5 class="need__item-title">
+                      Профлист МП-20 Ecosteel Золотой дуб текстурированный
+                    </h5>
+                    <a class="need__item-text" href="#">
+                      С этим товаром понадобится
+                    </a>
+                    <div class="need__item-price">
+                      <span>Цена за</span>
+                      <div
+                        class="need__item-size calculation__price-size calculation__price-block"
+                      >
+                        м<sup>2</sup>
+                      </div>
+                      <div
+                        class="need__item-type calculation__price-type calculation__price-block"
+                      >
+                        лист
+                      </div>
+                    </div>
+                    <div class="need__item-result">
+                      <h6 class="need-result-price">
+                        77 790 <span>руб./кв.</span>
+                      </h6>
+                      <div class="count-wrapper">
+                        <img
+                          class="calculation__count-btn min"
+                          src="img/min.svg"
+                          alt="svg"
+                        />
+                        <input
+                          class="calculation__count-result"
+                          type="number"
+                          value="1"
+                          placeholder="1"
+                        />
+                        <img
+                          class="calculation__count-btn plus"
+                          src="img/plus-gray.svg"
+                          alt="svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="need__item-btns">
+                    <button class="need__item-btn">Купить в 1 клик</button>
+                    <button class="need__item-btn need__item-btn_orange">
+                      <img src="img/cart.svg" alt="cart" />
+                      В корзину
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="need-next"></div>
+        </div>
+
+        <div class="need__list mobile">
+          <div class="need__item">
+            <div class="need__item-header">
+              <div class="need__item-stock card__header-stock yes">
+                <img src="img/ready.svg" alt="ready" />
+                <span>В наличии</span>
+              </div>
+              <div class="rating-result" data-total-value="2">
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+              </div>
+              <img class="need__item-img" src="img/need-1.png" alt="need" />
+            </div>
+            <div class="need__item-info">
+              <h5 class="need__item-title">
+                Профлист МП-20 Ecosteel Золотой дуб текстурированный
+              </h5>
+              <a class="need__item-text" href="#">
+                С этим товаром понадобится
+              </a>
+              <div class="need__item-price">
+                <span>Цена за</span>
+                <div
+                  class="need__item-size calculation__price-size calculation__price-block"
+                >
+                  м<sup>2</sup>
+                </div>
+                <div
+                  class="need__item-type calculation__price-type calculation__price-block"
+                >
+                  лист
+                </div>
+              </div>
+              <div class="need__item-result">
+                <h6 class="need-result-price">77 790 <span>руб./кв.</span></h6>
+                <div class="count-wrapper">
+                  <img
+                    class="calculation__count-btn min"
+                    src="img/min.svg"
+                    alt="svg"
+                  />
+                  <input
+                    class="calculation__count-result"
+                    type="number"
+                    value="1"
+                    placeholder="1"
+                  />
+                  <img
+                    class="calculation__count-btn plus"
+                    src="img/plus-gray.svg"
+                    alt="svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="need__item-btns">
+              <button class="need__item-btn">Купить в 1 клик</button>
+              <button class="need__item-btn need__item-btn_orange">
+                <img src="img/cart.svg" alt="cart" />
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="need__item">
+            <div class="need__item-header">
+              <div class="need__item-stock card__header-stock yes">
+                <img src="img/ready.svg" alt="ready" />
+                <span>В наличии</span>
+              </div>
+              <div class="rating-result" data-total-value="2">
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+              </div>
+              <img class="need__item-img" src="img/need-1.png" alt="need" />
+            </div>
+            <div class="need__item-info">
+              <h5 class="need__item-title">
+                Профлист МП-20 Ecosteel Золотой дуб текстурированный
+              </h5>
+              <a class="need__item-text" href="#">
+                С этим товаром понадобится
+              </a>
+              <div class="need__item-price">
+                <span>Цена за</span>
+                <div
+                  class="need__item-size calculation__price-size calculation__price-block"
+                >
+                  м<sup>2</sup>
+                </div>
+                <div
+                  class="need__item-type calculation__price-type calculation__price-block"
+                >
+                  лист
+                </div>
+              </div>
+              <div class="need__item-result">
+                <h6 class="need-result-price">77 790 <span>руб./кв.</span></h6>
+                <div class="count-wrapper">
+                  <img
+                    class="calculation__count-btn min"
+                    src="img/min.svg"
+                    alt="svg"
+                  />
+                  <input
+                    class="calculation__count-result"
+                    type="number"
+                    value="1"
+                    placeholder="1"
+                  />
+                  <img
+                    class="calculation__count-btn plus"
+                    src="img/plus-gray.svg"
+                    alt="svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="need__item-btns">
+              <button class="need__item-btn">Купить в 1 клик</button>
+              <button class="need__item-btn need__item-btn_orange">
+                <img src="img/cart.svg" alt="cart" />
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="need__item">
+            <div class="need__item-header">
+              <div class="need__item-stock card__header-stock yes">
+                <img src="img/ready.svg" alt="ready" />
+                <span>В наличии</span>
+              </div>
+              <div class="rating-result" data-total-value="2">
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+              </div>
+              <img class="need__item-img" src="img/need-1.png" alt="need" />
+            </div>
+            <div class="need__item-info">
+              <h5 class="need__item-title">
+                Профлист МП-20 Ecosteel Золотой дуб текстурированный
+              </h5>
+              <a class="need__item-text" href="#">
+                С этим товаром понадобится
+              </a>
+              <div class="need__item-price">
+                <span>Цена за</span>
+                <div
+                  class="need__item-size calculation__price-size calculation__price-block"
+                >
+                  м<sup>2</sup>
+                </div>
+                <div
+                  class="need__item-type calculation__price-type calculation__price-block"
+                >
+                  лист
+                </div>
+              </div>
+              <div class="need__item-result">
+                <h6 class="need-result-price">77 790 <span>руб./кв.</span></h6>
+                <div class="count-wrapper">
+                  <img
+                    class="calculation__count-btn min"
+                    src="img/min.svg"
+                    alt="svg"
+                  />
+                  <input
+                    class="calculation__count-result"
+                    type="number"
+                    value="1"
+                    placeholder="1"
+                  />
+                  <img
+                    class="calculation__count-btn plus"
+                    src="img/plus-gray.svg"
+                    alt="svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="need__item-btns">
+              <button class="need__item-btn">Купить в 1 клик</button>
+              <button class="need__item-btn need__item-btn_orange">
+                <img src="img/cart.svg" alt="cart" />
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="need__item">
+            <div class="need__item-header">
+              <div class="need__item-stock card__header-stock yes">
+                <img src="img/ready.svg" alt="ready" />
+                <span>В наличии</span>
+              </div>
+              <div class="rating-result" data-total-value="2">
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+                <i class="rating-result-item fa-solid fa-star"></i>
+              </div>
+              <img class="need__item-img" src="img/need-1.png" alt="need" />
+            </div>
+            <div class="need__item-info">
+              <h5 class="need__item-title">
+                Профлист МП-20 Ecosteel Золотой дуб текстурированный
+              </h5>
+              <a class="need__item-text" href="#">
+                С этим товаром понадобится
+              </a>
+              <div class="need__item-price">
+                <span>Цена за</span>
+                <div
+                  class="need__item-size calculation__price-size calculation__price-block"
+                >
+                  м<sup>2</sup>
+                </div>
+                <div
+                  class="need__item-type calculation__price-type calculation__price-block"
+                >
+                  лист
+                </div>
+              </div>
+              <div class="need__item-result">
+                <h6 class="need-result-price">77 790 <span>руб./кв.</span></h6>
+                <div class="count-wrapper">
+                  <img
+                    class="calculation__count-btn min"
+                    src="img/min.svg"
+                    alt="svg"
+                  />
+                  <input
+                    class="calculation__count-result"
+                    type="number"
+                    value="1"
+                    placeholder="1"
+                  />
+                  <img
+                    class="calculation__count-btn plus"
+                    src="img/plus-gray.svg"
+                    alt="svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="need__item-btns">
+              <button class="need__item-btn">Купить в 1 клик</button>
+              <button class="need__item-btn need__item-btn_orange">
+                <img src="img/cart.svg" alt="cart" />
+                В корзину
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rating">
+      <div class="container">
+        <div class="rating__inner">
+          <h3 class="rating__title title">Наши рейтинги</h3>
+          <div class="rating-slider-wrapper">
+            <div class="rating-prev"></div>
+            <div class="swiper rating-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rating__item">
+                    <div class="rating__item-info">
+                      <img
+                        class="rating__item-img"
+                        src="img/rating-item-1.png"
+                        alt="rating"
+                      />
+                      <div class="rating__item-result">
+                        <span class="rating__item-value">4</span>
+                        <div class="rating-result" data-total-value="2">
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="rating__item-text">2gis.ru</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rating__item">
+                    <div class="rating__item-info">
+                      <img
+                        class="rating__item-img"
+                        src="img/rating-item-1.png"
+                        alt="rating"
+                      />
+                      <div class="rating__item-result">
+                        <span class="rating__item-value">4</span>
+                        <div class="rating-result" data-total-value="2">
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="rating__item-text">2gis.ru</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rating__item">
+                    <div class="rating__item-info">
+                      <img
+                        class="rating__item-img"
+                        src="img/rating-item-1.png"
+                        alt="rating"
+                      />
+                      <div class="rating__item-result">
+                        <span class="rating__item-value">4</span>
+                        <div class="rating-result" data-total-value="2">
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="rating__item-text">2gis.ru</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rating__item">
+                    <div class="rating__item-info">
+                      <img
+                        class="rating__item-img"
+                        src="img/rating-item-1.png"
+                        alt="rating"
+                      />
+                      <div class="rating__item-result">
+                        <span class="rating__item-value">4</span>
+                        <div class="rating-result" data-total-value="2">
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="rating__item-text">2gis.ru</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rating__item">
+                    <div class="rating__item-info">
+                      <img
+                        class="rating__item-img"
+                        src="img/rating-item-1.png"
+                        alt="rating"
+                      />
+                      <div class="rating__item-result">
+                        <span class="rating__item-value">4</span>
+                        <div class="rating-result" data-total-value="2">
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="rating__item-text">2gis.ru</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rating__item">
+                    <div class="rating__item-info">
+                      <img
+                        class="rating__item-img"
+                        src="img/rating-item-1.png"
+                        alt="rating"
+                      />
+                      <div class="rating__item-result">
+                        <span class="rating__item-value">4</span>
+                        <div class="rating-result" data-total-value="2">
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                          <i class="rating-result-item fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="rating__item-text">2gis.ru</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rating-next"></div>
+          </div>
+          <div class="rating__list">
+            <div class="rating__item">
+              <div class="rating__item-info">
+                <img
+                  class="rating__item-img"
+                  src="img/rating-item-1.png"
+                  alt="rating"
+                />
+                <div class="rating__item-result">
+                  <span class="rating__item-value">4</span>
+                  <div class="rating-result" data-total-value="2">
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="rating__item-text">2gis.ru</p>
+            </div>
+            <div class="rating__item">
+              <div class="rating__item-info">
+                <img
+                  class="rating__item-img"
+                  src="img/rating-item-1.png"
+                  alt="rating"
+                />
+                <div class="rating__item-result">
+                  <span class="rating__item-value">4</span>
+                  <div class="rating-result" data-total-value="2">
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="rating__item-text">2gis.ru</p>
+            </div>
+            <div class="rating__item">
+              <div class="rating__item-info">
+                <img
+                  class="rating__item-img"
+                  src="img/rating-item-1.png"
+                  alt="rating"
+                />
+                <div class="rating__item-result">
+                  <span class="rating__item-value">4</span>
+                  <div class="rating-result" data-total-value="2">
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="rating__item-text">2gis.ru</p>
+            </div>
+            <div class="rating__item">
+              <div class="rating__item-info">
+                <img
+                  class="rating__item-img"
+                  src="img/rating-item-1.png"
+                  alt="rating"
+                />
+                <div class="rating__item-result">
+                  <span class="rating__item-value">4</span>
+                  <div class="rating-result" data-total-value="2">
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                    <i class="rating-result-item fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="rating__item-text">2gis.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contacts">
+      <div class="container">
+        <div class="contacts__inner">
+          <div class="contacts__info">
+            <div class="contacts__title title">Контакты</div>
+            <a class="tel" href="tel+79612394057">+7 (961) 239-40-57</a>
+            <ul class="contacts__list time">
+              <li class="contacts__list-item">Пн. – пт.: 09.00 – 18.00</li>
+              <li class="contacts__list-item">Сб.: 09:00 – 14:00</li>
+              <li class="contacts__list-item">Вс.: выходной</li>
+            </ul>
+            <h6 class="contacts__title-block">Адрес офиса</h6>
+            <ul class="contacts__list location">
+              <li class="contacts__list-item">г. Барнаул,</li>
+              <li class="contacts__list-item">
+                ул. Антона Петрова, д. 190, офис 3
+              </li>
+            </ul>
+            <h6 class="contacts__title-block">Электронная почта</h6>
+            <a class="contacts__email" href="#">lightstroi@yandex.ru</a>
+            <button class="contacts__btn btn_orange">Позвоните мне</button>
+          </div>
+          <div class="contacts__location">
+            <div class="contacts__location-wrapper">
+              <div class="map" id="map"></div>
+              <img
+                class="contacts__location-img"
+                src="img/contacts-img.png"
+                alt="contacts"
+              />
+              <p class="contacts__location-text">
+                Лучшие цены на кровельные материалы
+              </p>
+            </div>
+            <div class="contacts__location-footer">
+              <div class="contacts__location-socials">
+                <h3 class="contacts__location-title">Наши месенджеры:</h3>
+                <div class="socials__list">
+                  <a class="socials__list-item" href="#">
+                    <img
+                      class="socials__list-img"
+                      src="img/whatsapp.svg"
+                      alt="whatsapp"
+                    />
+                  </a>
+                  <a class="socials__list-item" href="#">
+                    <img
+                      class="socials__list-img"
+                      src="img/telegram.svg"
+                      alt="telegram"
+                    />
+                  </a>
+                  <a class="socials__list-item" href="#">
+                    <img
+                      class="socials__list-img"
+                      src="img/viber.svg"
+                      alt="viber"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="contacts__favourites">
+                <button class="contacts__favourites-btn">
+                  <img src="img/like.svg" alt="like" />
+                  Добавить сайт в избранное
+                </button>
+                <p class="contacts__favourites-text">
+                  Либо нажмите сочетание клавиш <span>CTRL + D</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="questions">
+      <div class="container">
+        <div class="questions__inner">
+          <h3 class="questions__title title">У вас есть вопросы?</h3>
+          <p class="questions__text">
+            Вы можете задать их нашему менеджеру в любое время. Напишите нам и
+            получите профессиональную консультацию специалиста
+          </p>
+
+          <form class="questions__form">
+            <div class="questions__form-inputs">
+              <input
+                class="questions__form-input"
+                type="text"
+                placeholder="Ваше имя"
+              />
+              <input
+                class="questions__form-input"
+                type="tel"
+                placeholder="+7 (___) ___-__-__"
+                data-phone-pattern="+7 (___) ___-__-__"
+                data-phone-clear="false"
+              />
+            </div>
+            <button class="questions__form-btn btn_orange" type="submit">
+              Задать вопрос
+            </button>
+
+            <p class="warning">
+              Нажимая «Отправить», вы даете согласие на обработку персональных
+              данных в соответствии с
+              <a href="#">политикой конфиденциальности</a> и принимаете условия
+              <a href="#">пользовательского соглашения</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="add-review">
+      <div class="container">
+        <form class="add-review__form">
+          <h3 class="add-review__title title">Добавить отзыв</h3>
+          <div class="add-review__inputs">
+            <input
+              class="add-review__input questions__form-input"
+              type="text"
+              placeholder="Ваше имя*"
+            />
+            <input
+              class="add-review__input questions__form-input"
+              type="tel"
+              data-phone-pattern="+7 (___) ___-__-__"
+              data-phone-clear="false"
+              placeholder="Телефон - не публикуется"
+            />
+          </div>
+          <textarea
+            class="add-review__textarea"
+            placeholder="Текст отзыва"
+          ></textarea>
+
+          <div class="add-review__footer-top">
+            <div class="add-review__rating">
+              <p class="add-review__text">Оцените товар</p>
+              <div class="rating-result" data-total-value="0">
+                <i class="hov rating-result-item fa-solid fa-star" data-item-value="5"></i>
+                <i class="hov rating-result-item fa-solid fa-star" data-item-value="4"></i>
+                <i class="hov rating-result-item fa-solid fa-star" data-item-value="3"></i>
+                <i class="hov rating-result-item fa-solid fa-star" data-item-value="2"></i>
+                <i class="hov rating-result-item fa-solid fa-star" data-item-value="1"></i>
+              </div>
+            </div>
+            <div class="add-review__photo-wrapper">
+              <input
+                class="add-review__photo"
+                type="file"
+                id="add-photo"
+                onchange="download(this)"
+              />
+              <label for="add-photo">
+                <img src="img/attach.svg" alt="attach" />
+                <span>Прикрепить фотоотчёт</span>
+              </label>
+              <div class="add-review__images"></div>
+            </div>
+          </div>
+          <div class="add-review__footer-bottom">
+            <button class="add-review__btn btn_orange" type="submit">
+              Отправить
+            </button>
+            <p class="warning">
+              Нажимая «Отправить», вы даете согласие на обработку персональных
+              данных в соответствии с
+              <a href="#">политикой конфиденциальности</a> и принимаете условия
+              <a href="#">пользовательского соглашения</a>.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="success">
+      <div class="container">
+        <div class="success__inner">
+          <div class="success__close">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="#fff"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#fff"
+                clip-rule="evenodd"
+                d="M14.999 8.99902H8.99899V14.999C8.99899 15.2642 8.89364 15.5186 8.7061 15.7061C8.51856 15.8937 8.26421 15.999 7.99899 15.999C7.73378 15.999 7.47942 15.8937 7.29189 15.7061C7.10435 15.5186 6.99899 15.2642 6.99899 14.999V8.99902H0.998993C0.733776 8.99902 0.479423 8.89367 0.291886 8.70613C0.10435 8.51859 -0.00100708 8.26424 -0.00100708 7.99902C-0.00100708 7.73381 0.10435 7.47945 0.291886 7.29192C0.479423 7.10438 0.733776 6.99902 0.998993 6.99902H6.99899V0.999023C6.99899 0.733807 7.10435 0.479453 7.29189 0.291917C7.47942 0.10438 7.73378 -0.000976562 7.99899 -0.000976562C8.26421 -0.000976562 8.51856 0.10438 8.7061 0.291917C8.89364 0.479453 8.99899 0.733807 8.99899 0.999023V6.99902H14.999C15.2642 6.99902 15.5186 7.10438 15.7061 7.29192C15.8936 7.47945 15.999 7.73381 15.999 7.99902C15.999 8.26424 15.8936 8.51859 15.7061 8.70613C15.5186 8.89367 15.2642 8.99902 14.999 8.99902Z"
+              />
+            </svg>
+          </div>
+          <img class="success__img" src="img/success.svg" alt="success" />
+          <h4 class="success__title">Спасибо за отзыв!</h4>
+          <p class="success__text">Для нас важно мнение каждого клиента.</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
